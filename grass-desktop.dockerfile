@@ -38,7 +38,8 @@
         apt-get install -y --no-install-recommends \
         xdotool \
         ca-certificates \
-        dpkg
+        dpkg \
+        libfuse2
     
     # Copy patched deb from builder stage
     COPY --from=grass-deb-patcher /tmp/grass.deb /tmp/grass.deb
